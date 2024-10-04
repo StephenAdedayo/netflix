@@ -26,7 +26,7 @@ const TitleCards = ({title, category}) => {
     const handleWheel = (e) => {
        e.preventDefault()
        cardsRef.current.scrollLeft +=e.deltaY
-    }
+    } 
    
     useEffect(() => {
        cardsRef.current.addEventListener('wheel', handleWheel)

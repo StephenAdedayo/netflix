@@ -16,11 +16,11 @@ const Login = () => {
          onAuthStateChanged(auth, async (user) => {
           if(user){
             console.log('Logged In');
-            navigate('/')
+            navigate('/home')
             
           } else{
             console.log('Logged Out');
-            navigate('/login')
+            navigate('/')
             
           }
          })
